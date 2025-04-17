@@ -486,7 +486,152 @@ Grid *update(Grid *g, Grid *age_pg) {
 			}
 				
 				}else if (g_count>4){
-
+//no edges
+				if (i!=0 && i!=nrows && j!=0 && j!=ncols){
+					//N
+					if (g->cells[(i-1) * g->ncols + j == 'g']){
+						g_count++;
+					}	
+					//NE
+                                        if (g->cells[(i-1) * g->ncols + (j+1) == 'g']){
+                                                g_count++;
+					}
+					//E
+					if (g->cells[i * g->ncols + (j+1)] == 'g'){
+						g_count++;
+					}	
+					//SE
+                                        if (g->cells[(i+1) * g->ncols + (j+1)] == 'g'){
+                                                g_count++;
+                                        }
+					//S
+					if (g->cells[(i+1) * g->ncols + j] == 'g'){
+                                                g_count++;
+                                        }
+					//SW
+                                        if (g->cells[(i+1) * g->ncols + (j-1)] == 'g'){
+                                                g_count++;
+                                        }
+					//W
+                                        if (g->cells[i * g->ncols + (j-1)] == 'g'){
+                                                g_count++;
+                                        }
+					//NW
+                                        if (g->cells[(i-1) * g->ncols + (j-1)] == 'g'){
+                                                g_count++;
+                                        }
+				//Corners
+				}else if ((i!=0 && j!=ncols) && (i!=nrows && j!=ncols) && (i!=nrows && j!=ncols) && (i!=0 && j!=0)){
+				//N edge
+                                        //NE
+                                        //E
+                                        if (g->cells[i * g->ncols + (j+1)] == 'g'){
+                                                g_count++;
+						g_count++;
+                                        }
+                                        //SE
+                                        if (g->cells[(i+1) * g->ncols + (j+1)] == 'g'){
+                                                g_count++;
+                                        }
+                                        //S
+                                        if (g->cells[(i+1) * g->ncols + j] == 'g'){
+                                                g_count++;
+                                        }
+                                        //SW
+                                        if (g->cells[(i+1) * g->ncols + (j-1)] == 'g'){
+                                                g_count++;
+                                        }
+                                        //W
+                                        if (g->cells[i * g->ncols + (j-1)] == 'g'){
+                                                g_count++;
+						g_count++;
+                                        }
+                                        //NW
+				//E edge
+                                        //N
+                                        if (g->cells[(i-1) * g->ncols + j == 'g']){
+                                                g_count++;
+						g_count++;
+                                        }
+                                        //NE
+                                        //E
+                                        //SE
+                                        //S
+                                        if (g->cells[(i+1) * g->ncols + j] == 'g'){
+                                                g_count++;
+						g_count++;
+                                        }
+                                        //SW
+                                        if (g->cells[(i+1) * g->ncols + (j-1)] == 'g'){
+                                                g_count++;
+                                        }
+                                        //W
+                                        if (g->cells[i * g->ncols + (j-1)] == 'g'){
+                                                g_count++;
+                                        }
+                                        //NW
+                                        if (g->cells[(i-1) * g->ncols + (j-1)] == 'g'){
+                                                g_count++;
+                                        }
+				//S edge
+                                        //N
+                                        if (g->cells[(i-1) * g->ncols + j == 'g']){
+                                                g_count++;
+                                        }
+                                        //NE
+                                        if (g->cells[(i-1) * g->ncols + (j+1) == 'g']){
+                                                g_count++;
+                                        }
+                                        //E
+                                        if (g->cells[i * g->ncols + (j+1)] == 'g'){
+                                                g_count++;
+						g_count++;
+                                        }
+                                	//SE
+                                        //S
+					//SW
+                                        //W
+                                        if (g->cells[i * g->ncols + (j-1)] == 'g'){
+                                                g_count++;
+						g_count++:
+                                        }
+                                        //NW
+                                        if (g->cells[(i-1) * g->ncols + (j-1)] == 'g'){
+                                                g_count++;
+                                        }
+				//W edge
+                                        //N
+                                        if (g->cells[(i-1) * g->ncols + j == 'g']){
+                                                g_count++;
+						g_count++;
+                                        }
+                                        //NE
+                                        if (g->cells[(i-1) * g->ncols + (j+1) == 'g']){
+                                                g_count++;
+                                        }
+                                        //E
+                                        if (g->cells[i * g->ncols + (j+1)] == 'g'){
+                                                g_count++;
+                                        }
+                                        //SE
+                                        if (g->cells[(i+1) * g->ncols + (j+1)] == 'g'){
+                                                g_count++;
+                                        }
+                                        //S
+                                        if (g->cells[(i+1) * g->ncols + j] == 'g'){
+                                                g_count++;
+						g_count++;
+                                        }
+                                        //W
+					//NW
+				}
+					}
+			}else if (f_count>1){
+				g->cells[i * g->ncols + j] = 'f';
+				age_g->cells[i * g->ncols + j]--;
+				g_count = 0;
+			}
+			}
 				
 				}
 			}
