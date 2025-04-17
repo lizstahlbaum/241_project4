@@ -28,11 +28,11 @@ Grid *update(Grid *g, Grid *age_pg) {
 				//no edges
 				if (i!=0 && i!=nrows && j!=0 && j!=ncols){
 					//N
-					if (g->cells[(i-1) * g->ncols + j == 'f']){
+					if (g->cells[(i-1) * g->ncols + j] == 'f'){
 						f_count++;
 					}	
 					//NE
-                                        if (g->cells[(i-1) * g->ncols + (j+1) == 'f']){
+                                        if (g->cells[(i-1) * g->ncols + (j+1)] == 'f'){
                                                 f_count++;
 					}
 					//E
@@ -88,7 +88,7 @@ Grid *update(Grid *g, Grid *age_pg) {
                                         //NW
 				//E edge
                                         //N
-                                        if (g->cells[(i-1) * g->ncols + j == 'f']){
+                                        if (g->cells[(i-1) * g->ncols + j] == 'f'){
                                                 f_count++;
 						f_count++;
                                         }
@@ -114,11 +114,11 @@ Grid *update(Grid *g, Grid *age_pg) {
                                         }
 				//S edge
                                         //N
-                                        if (g->cells[(i-1) * g->ncols + j == 'f']){
+                                        if (g->cells[(i-1) * g->ncols + j] == 'f'){
                                                 f_count++;
                                         }
                                         //NE
-                                        if (g->cells[(i-1) * g->ncols + (j+1) == 'f']){
+                                        if (g->cells[(i-1) * g->ncols + (j+1)] == 'f'){
                                                 f_count++;
                                         }
                                         //E
@@ -140,12 +140,12 @@ Grid *update(Grid *g, Grid *age_pg) {
                                         }
 				//W edge
                                         //N
-                                        if (g->cells[(i-1) * g->ncols + j == 'f']){
+                                        if (g->cells[(i-1) * g->ncols + j] == 'f'){
                                                 f_count++;
 						f_count++;
                                         }
                                         //NE
-                                        if (g->cells[(i-1) * g->ncols + (j+1) == 'f']){
+                                        if (g->cells[(i-1) * g->ncols + (j+1)] == 'f'){
                                                 f_count++;
                                         }
                                         //E
@@ -178,11 +178,11 @@ Grid *update(Grid *g, Grid *age_pg) {
                                 //no edges
                                 if (i!=0 && i!=nrows && j!=0 && j!=ncols){
                                         //N
-                                        if (g->cells[(i-1) * g->ncols + j == 'f']){
+                                        if (g->cells[(i-1) * g->ncols + j] == 'f'){
                                                 f_count++;
                                         }
                                         //NE
-                                        if (g->cells[(i-1) * g->ncols + (j+1) == 'f']){
+                                        if (g->cells[(i-1) * g->ncols + (j+1)] == 'f'){
                                                 f_count++;
                                         }
                                         //E
@@ -239,7 +239,7 @@ Grid *update(Grid *g, Grid *age_pg) {
 
 //E edge
                                         //N
-                                        if (g->cells[(i-1) * g->ncols + j == 'f']){
+                                        if (g->cells[(i-1) * g->ncols + j] == 'f'){
                                                 f_count++;
                                                 f_count++;
                                         }
@@ -265,11 +265,11 @@ Grid *update(Grid *g, Grid *age_pg) {
                                         }
  //S edge
                                         //N
-                                        if (g->cells[(i-1) * g->ncols + j == 'f']){
+                                        if (g->cells[(i-1) * g->ncols + j] == 'f'){
                                                 f_count++;
                                         }
                                         //NE
-                                        if (g->cells[(i-1) * g->ncols + (j+1) == 'f']){
+                                        if (g->cells[(i-1) * g->ncols + (j+1)] == 'f'){
                                                 f_count++;
                                         }
                                         //E
@@ -291,12 +291,12 @@ Grid *update(Grid *g, Grid *age_pg) {
                                         }
 					                                //W edge
                                         //N
-                                        if (g->cells[(i-1) * g->ncols + j == 'f']){
+                                        if (g->cells[(i-1) * g->ncols + j] == 'f'){
                                                 f_count++;
                                                 f_count++;
                                         }
                                         //NE
-                                        if (g->cells[(i-1) * g->ncols + (j+1) == 'f']){
+                                        if (g->cells[(i-1) * g->ncols + (j+1)] == 'f'){
                                                 f_count++;
                                         }
                                         //E
@@ -341,11 +341,11 @@ Grid *update(Grid *g, Grid *age_pg) {
 					//no edges
 				if (i!=0 && i!=nrows && j!=0 && j!=ncols){
 					//N
-					if (g->cells[(i-1) * g->ncols + j == 'g']){
+					if (g->cells[(i-1) * g->ncols + j] == 'g'){
 						g_count++;
 					}	
 					//NE
-                                        if (g->cells[(i-1) * g->ncols + (j+1) == 'g']){
+                                        if (g->cells[(i-1) * g->ncols + (j+1)] == 'g'){
                                                 g_count++;
 					}
 					//E
@@ -401,7 +401,7 @@ Grid *update(Grid *g, Grid *age_pg) {
                                         //NW
 				//E edge
                                         //N
-                                        if (g->cells[(i-1) * g->ncols + j == 'g']){
+                                        if (g->cells[(i-1) * g->ncols + j] == 'g'){
                                                 g_count++;
 						g_count++;
                                         }
@@ -427,11 +427,11 @@ Grid *update(Grid *g, Grid *age_pg) {
                                         }
 				//S edge
                                         //N
-                                        if (g->cells[(i-1) * g->ncols + j == 'g']){
+                                        if (g->cells[(i-1) * g->ncols + j] == 'g'){
                                                 g_count++;
                                         }
                                         //NE
-                                        if (g->cells[(i-1) * g->ncols + (j+1) == 'g']){
+                                        if (g->cells[(i-1) * g->ncols + (j+1)] == 'g'){
                                                 g_count++;
                                         }
                                         //E
@@ -453,12 +453,12 @@ Grid *update(Grid *g, Grid *age_pg) {
                                         }
 				//W edge
                                         //N
-                                        if (g->cells[(i-1) * g->ncols + j == 'g']){
+                                        if (g->cells[(i-1) * g->ncols + j] == 'g'){
                                                 g_count++;
 						g_count++;
                                         }
                                         //NE
-                                        if (g->cells[(i-1) * g->ncols + (j+1) == 'g']){
+                                        if (g->cells[(i-1) * g->ncols + (j+1)] == 'g'){
                                                 g_count++;
                                         }
                                         //E
@@ -489,11 +489,11 @@ Grid *update(Grid *g, Grid *age_pg) {
 //no edges
 				if (i!=0 && i!=nrows && j!=0 && j!=ncols){
 					//N
-					if (g->cells[(i-1) * g->ncols + j == 'g']){
+					if (g->cells[(i-1) * g->ncols + j] == 'g'){
 						g_count++;
 					}	
 					//NE
-                                        if (g->cells[(i-1) * g->ncols + (j+1) == 'g']){
+                                        if (g->cells[(i-1) * g->ncols + (j+1)] == 'g'){
                                                 g_count++;
 					}
 					//E
@@ -549,7 +549,7 @@ Grid *update(Grid *g, Grid *age_pg) {
                                         //NW
 				//E edge
                                         //N
-                                        if (g->cells[(i-1) * g->ncols + j == 'g']){
+                                        if (g->cells[(i-1) * g->ncols + j] == 'g'){
                                                 g_count++;
 						g_count++;
                                         }
@@ -575,11 +575,11 @@ Grid *update(Grid *g, Grid *age_pg) {
                                         }
 				//S edge
                                         //N
-                                        if (g->cells[(i-1) * g->ncols + j == 'g']){
+                                        if (g->cells[(i-1) * g->ncols + j] == 'g'){
                                                 g_count++;
                                         }
                                         //NE
-                                        if (g->cells[(i-1) * g->ncols + (j+1) == 'g']){
+                                        if (g->cells[(i-1) * g->ncols + (j+1)] == 'g'){
                                                 g_count++;
                                         }
                                         //E
@@ -601,12 +601,12 @@ Grid *update(Grid *g, Grid *age_pg) {
                                         }
 				//W edge
                                         //N
-                                        if (g->cells[(i-1) * g->ncols + j == 'g']){
+                                        if (g->cells[(i-1) * g->ncols + j] == 'g'){
                                                 g_count++;
 						g_count++;
                                         }
                                         //NE
-                                        if (g->cells[(i-1) * g->ncols + (j+1) == 'g']){
+                                        if (g->cells[(i-1) * g->ncols + (j+1)] == 'g'){
                                                 g_count++;
                                         }
                                         //E
