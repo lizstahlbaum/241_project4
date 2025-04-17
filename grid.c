@@ -60,7 +60,7 @@ Grid *update(Grid *g, Grid *age_pg) {
                                                 f_count++;
                                         }
 				//Corners
-				}else if ((i!=0 && j!=ncols) && (i!=nrows && j!=ncols) && (i!=nrows && j!=ncols) && (i!=0 && j!=0)){
+				}else if ((i!=0 && j!=ncols-1) && (i!=nrows && j!=ncols-1) && (i!=nrows && j!=ncols-1) && (i!=0 && j!=0)){
 				//N edge
                                         //NE
                                         //E
@@ -210,7 +210,7 @@ Grid *update(Grid *g, Grid *age_pg) {
                                                 f_count++;
                                         }
 					//Corners
-                                }else if ((i!=0 && j!=ncols) && (i!=nrows && j!=ncols) && (i!=nrows && j!=ncols) && (i!=0 && j!=0)){
+                                }else if ((i!=0 && j!=ncols-1) && (i!=nrows && j!=ncols-1) && (i!=nrows && j!=ncols-1) && (i!=0 && j!=0)){
                                 //N edge
                                         //NE
                                         //E
@@ -373,7 +373,7 @@ Grid *update(Grid *g, Grid *age_pg) {
                                                 g_count++;
                                         }
 				//Corners
-				}else if ((i!=0 && j!=ncols) && (i!=nrows && j!=ncols) && (i!=nrows && j!=ncols) && (i!=0 && j!=0)){
+				}else if ((i!=0 && j!=ncols-1) && (i!=nrows && j!=ncols-1) && (i!=nrows && j!=ncols-1) && (i!=0 && j!=0)){
 				//N edge
                                         //NE
                                         //E
@@ -521,7 +521,7 @@ Grid *update(Grid *g, Grid *age_pg) {
                                                 g_count++;
                                         }
 				//Corners
-				}else if ((i!=0 && j!=ncols) && (i!=nrows && j!=ncols) && (i!=nrows && j!=ncols) && (i!=0 && j!=0)){
+				}else if ((i!=0 && j!=ncols-1) && (i!=nrows && j!=ncols-1) && (i!=nrows && j!=ncols-1) && (i!=0 && j!=0)){
 				//N edge
                                         //NE
                                         //E
@@ -635,7 +635,7 @@ Grid *update(Grid *g, Grid *age_pg) {
 				
 				}
 			}
-
+			age_g->cells[i * g->ncols + j]++;
 		}
 	}
 	printf("\n");
